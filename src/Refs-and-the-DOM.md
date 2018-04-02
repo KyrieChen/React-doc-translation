@@ -1,0 +1,2 @@
+## Refs and the DOM
+Refs提供了一种访问在render函数中创建的DOM节点和React元素的方式。在典型的React数据流中，父组件和他们的子代交互的唯一方式就是通过
