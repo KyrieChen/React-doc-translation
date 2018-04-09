@@ -24,6 +24,8 @@
 在渲染中，在声明周期函数中，或者再任意子组件的构造函数中出现error，这个方法都会被调用。
 - componentDidCatch()
 
+## 详细内容
+
 ### static getDerivedStateFromProps()
 ```javascript
 static getDerivedStateFromProps(nextProps, prevState)
@@ -125,3 +127,5 @@ componentDidCatch(error, info)
 如果一个class组件定义了这个生命周期方法，它会成为一个错误边界。在其中调用`setState()`能让你捕获一个在子树中未经过处理的JavaScript错误然后展示一个回退UI。错误边界仅用于从意外的异常中恢复，不要尝试用他们来控制流。
 更多细节，见[Error Handling in React 16](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)。
 > Error boundaries only catch errors in the components below them in the tree. An error boundary can’t catch an error within itself.
+
+[React生命周期在线参考](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
